@@ -28,9 +28,9 @@ app.all('/results', (request, response) => {
     const twiml = new VoiceResponse();
 
     if (userInput.includes('love')) {
-        twiml.play('https://timberwolf-turtle-4973.twil.io/assets/love-you.mp3');
+        twiml.play('Use the Twilio Assest to upload your file');
     } else if (userInput.includes('hate')) {
-        twiml.play('https://timberwolf-turtle-4973.twil.io/assets/hate-you.mp3');
+        twiml.play('use the Twilio Assest to upload your file');
     } else {
         twiml.say("I didn't understand that.");
     }
